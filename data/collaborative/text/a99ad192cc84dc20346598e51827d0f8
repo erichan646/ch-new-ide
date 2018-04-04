@@ -1,0 +1,15 @@
+s:184:"{
+	"keys": [{
+		"name": "Save",
+		"bindKey": {
+			"win": "Ctrl-S",
+			"mac": "Ctrl-S"
+		}
+	}, {
+		"name": "CodeDate",
+		"bindKey": {
+			"win": "Ctrl-5",
+			"mac": "Command-5"
+		}
+	}]
+}";

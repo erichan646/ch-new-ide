@@ -1,0 +1,84 @@
+.sb-left-content {
+    bottom: 376px;
+}
+
+.favorites-sb {
+    bottom: 276px;
+    height: 100px;
+    left: 0;
+    position: absolute;
+    right: 10px;
+}
+
+.favorites-list-title {
+    background-color: #2b2b2b;
+    border-top: solid 1px #DBDCDD;
+    border-bottom: solid 1px #DBDCDD;
+    height: 35px;
+    left: 0;
+    overflow: hidden;
+    right: 0;
+    top: 0;
+}
+
+.favorites-list-title h2 {
+	color: #ffffff;
+    display: block;
+    float: left;
+    font-size: 15px;
+    font-weight: 500;
+    margin: 7px;
+}
+
+.favorites-list-title .icon {
+	color: #ffffff;
+    cursor: pointer;
+    display: block;
+    float: right;
+    font-size: 15px;
+    margin: 5px;
+    padding: 5px;
+}
+
+.favorites {
+    height: 65px;
+    max-height: 65px;
+    overflow-y: scroll;
+    overflow-x: hidden;
+    background-color: #2b2b2b;
+}
+
+#favorites-list {
+	display: block;
+	margin: 0px 15px 0px 0px;
+	padding-left: 15px;
+}
+
+#favorites-list a {
+    background-repeat: no-repeat;
+    background-position: 4px 4px;
+    padding-bottom: 5px;
+    padding-top: 5px;
+    padding-left: 27px;
+    width: 100%;
+}
+
+#favorites-list .directory.open {
+    background-image: url("../../themes/codehelper/filemanager/images/folder.svg");
+}
+
+.favorite-item {
+	padding: 2px 0px 2px 5px;
+	width: 100%;
+}
+
+.favorite-item:hover {
+	border-radius: 3px;
+	background-color: #333333;
+    cursor: pointer;
+}
+
+#favorites-list img {
+	cursor: pointer;
+	width: 15px;
+}

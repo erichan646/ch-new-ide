@@ -1,0 +1,93 @@
+#project-list {
+    max-height: 50vh;
+    overflow: auto;
+    margin: 15px 0;
+}
+
+.project-wrapper {
+  width: 100%; 
+}
+
+.project-list-title {
+	border-bottom: 1px solid #dbdcdd;
+	border-top: 1px solid #dbdcdd;
+    position: absolute;
+    z-index: 9998;
+    top: 0;
+    left: 0;
+    right: 0px;
+    height: 33px;
+    background-color: #2b2b2b;
+    color:#ffffff;
+    overflow: hidden;
+}
+
+.project-list-title h2 {
+    float: left;
+    font-size: 15px;
+    font-weight: normal;
+    color: #ffffff;
+    display: block;
+    margin: 6.5px 10px;
+}
+
+.project-list-title .icon {
+    display: block;
+    font-size: 15px;
+    color: #ffffff;
+    z-index: 99999;
+    cursor: pointer;
+    margin: 8px 10px 0 5px;
+    float: right;
+}
+
+.project-list-title .icon:hover {
+    color: #1852D6;
+}
+
+.sb-project-list {
+    max-height: 276px !important;
+    margin: 0 0 !important;
+    overflow: auto !important;
+}
+
+.sb-projects-content {
+    background-color: /* Permalink - use to edit and share this gradient: http://colorzilla.com/gradient-editor/#333333+0,111111+100 */
+background: rgb(51,51,51); /* Old browsers */
+background: -moz-linear-gradient(top, rgba(51,51,51,1) 0%, rgba(17,17,17,1) 100%); /* FF3.6-15 */
+background: -webkit-linear-gradient(top, rgba(51,51,51,1) 0%,rgba(17,17,17,1) 100%); /* Chrome10-25,Safari5.1-6 */
+background: linear-gradient(to bottom, rgba(51,51,51,1) 0%,rgba(17,17,17,1) 100%); /* W3C, IE10+, FF16+, Chrome26+, Opera12+, Safari7+ */
+filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#333333', endColorstr='#111111',GradientType=0 ); /* IE6-9 */;
+    height: 243px;
+    width: 100%;
+    overflow: auto;
+    position: absolute;
+	top: 33px;
+    padding: 11px 11px 11px 11px;
+}
+
+.sb-projects-content li:hover {
+    background-color: #1852D6;
+	color: #f9fafb;
+    cursor: pointer;
+}
+
+.sb-projects-content ul {
+    display: block;
+}
+
+.sb-projects-content ul li {
+    padding: 4px;
+    white-space: nowrap;
+    border-radius: 2px;
+    color: #9C9895;
+}
+
+.sb-projects-content ul li .icon {
+    font-size: 13px;
+}
+
+#git-clone { border: none; }
+#git-clone td { border: none; padding: 0; margin: 0; }
+
+.note { padding: 10px 0; color: #a8a6a8; }
