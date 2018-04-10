@@ -6,11 +6,11 @@
     "rightbar" : [{
         "action" : "codiad.CodeSettings.showDialog();",
         "icon" : "icon-keyboard",
-        "title" : "CodeSettings"
+        "title" : "Key Bindings"
         }],
     "config": [{
         "file": "dialog.php",
-        "icon": "icon-keyboard",
+        "icon": "icon-cog",
         "title": "CodeSettings"
     }]
 }]

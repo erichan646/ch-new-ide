@@ -15,19 +15,19 @@
         switch($action) {
             case "show":
                 ?>
-                    <label>CodeSettings</label>
+                    <label>Key Bindings</label>
                     <div id="hotkey_div">
                         <table id="hotkey_list">
                             <tr>
-                                <td>Command name</td>
+                                <td>Command Function</td>
                                 <td>Win keybinding</td>
                                 <td>Mac keybinging</td>
                                 <td></td>
                             </tr>
                         </table>
                     </div>
-                    <button onclick="codiad.CodeSettings.add(); return false;">Add new binding</button>
-                    <button onclick="codiad.CodeSettings.edit(); return false;">Expert settings</button>
+                    <button onclick="codiad.CodeSettings.add(); return false;">Add Key Binding</button>
+                    <button onclick="codiad.CodeSettings.edit(); return false;">Expert Settings</button>
                     <button onclick="codiad.CodeSettings.help(); return false;">Help</button>
                     <script>
                         codiad.CodeSettings.show();
@@ -36,19 +36,19 @@
                 break;
             case "help":
                 ?>
-                    <label>CodeSettings - Help</label>
+                    <label>Key Bindings - Help</label>
                     <table>
                         <tr>
-                            <td>Command name:</td>
+                            <td>Command Function:</td>
                             <td>Name of the Command</td>
                         </tr>
                         <tr>
-                            <td>Win/Mac keybinding:</td>
+                            <td>Win/Mac Keybinding:</td>
                             <td>Keys given by its name divided by dash</td>
                         </tr>
                         <tr>
                             <td>Example:</td>
-                            <td>CompletePlus  Ctrl-Space</td>
+                            <td>Save  Ctrl-S</td>
                         </tr>
                     </table><button onclick="codiad.CodeSettings.showDialog(); return false;">Close</button>
                 <?php

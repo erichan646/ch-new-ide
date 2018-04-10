@@ -88,6 +88,81 @@
 .clearfix:after { clear: both; }
 .clearfix { zoom: 1; }
 
+/* Action Icons */
+
+#action-undo {
+	/* Adjust this size depending on the final editor-top-bar height. */
+	position: fixed;
+	top: 7px;
+	right: 40px;
+
+}
+
+#action-undo-button {
+	font-size: 18px;
+	color: #dedede;
+	border-right: 1px solid #fff;
+	padding-right: 5px;
+}
+
+#action-undo-button:hover {
+	color: #d00030;
+}
+
+#action-redo {
+	/* Adjust this size depending on the final editor-top-bar height. */
+	position: fixed;
+	top: 7px;
+	right: 65px;
+}
+
+#action-redo-button {
+	font-size: 18px;
+	color: #dedede;
+
+}
+
+#action-redo-button:hover {
+	color: #d00030;
+}
+
+#action-terminal {
+	/* Adjust this size depending on the final editor-top-bar height. */
+	position: fixed;
+	top: 7px;
+	right: 90px;
+}
+
+#action-terminal-button {
+	font-size: 18px;
+	color: #dedede;
+	border-right: 1px solid #fff;
+	padding-right:10px;
+}
+
+#action-terminal-button:hover {
+	color: #d00030;
+}
+
+#action-color {
+	/* Adjust this size depending on the final editor-top-bar height. */
+	position: fixed;
+	top: 7px;
+	right: 127px;
+}
+
+#action-color-button {
+	font-size: 18px;
+	color: #dedede;
+	border-right: 1px solid #fff;
+	padding-right:10px;
+}
+
+#action-color-button:hover {
+	color: #d00030;
+}
+
+
 /* Close button */
 
 #tab-close {
@@ -95,11 +170,12 @@
 	position: fixed;
 	top: 7px;
 	right: 10px;
+
 }
 
 #tab-close-button {
 	font-size: 18px;
-	color: #304050;
+	color: #dedede;
 }
 
 #tab-close-button:hover {

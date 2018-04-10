@@ -70,7 +70,7 @@
                                     <i class="icon-pencil" onclick='codiad.CodeTransfer.renameSel("localSel");' title="Rename"></i>
                                     <i class="icon-upload" onclick='codiad.CodeTransfer.transferSel("localSel");' title="Upload"></i>
                                     <i class="icon-arrows-ccw" onclick='codiad.CodeTransfer.updateLocalFiles(codiad.CodeTransfer.cDir);' title="Update"></i>
-                                    Codiad Server: <span id="local_path"></span>
+                                    CodeHelper Server: <span id="local_path"></span>
                                 </td>
                                 <td style="width: 12px;">
                                     <i class="icon-lock-open big-icon" id="ct_mirror_icon" style="margin-right: -10px;" onclick="codiad.CodeTransfer.mirror();" title="Mirror navigation"></i>

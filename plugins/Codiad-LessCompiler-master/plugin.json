@@ -6,7 +6,7 @@
         "url" : "https://github.com/dev-rke/Codiad-LessCompiler",
         "rightbar": [{
             "action": "codiad.LessCompiler.showDialogWrapper();",
-            "icon": "icon-cog",
+            "icon": "icon-docs",
             "title": "Less"
         }]
     }

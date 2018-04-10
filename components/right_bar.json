@@ -12,7 +12,7 @@
         "onclick": "codiad.active.saveAll();"
     },
     {
-        "title": "CodeHelper Extras",
+        "title": "Advanced Features",
         "admin": false,
         "icon": null,
         "onclick": null
@@ -43,13 +43,13 @@
     },
     
     {
-        "title": "Account",
+        "title": "Settings",
         "admin": false,
         "icon": null,
         "onclick": null
     },
     {
-        "title": "Settings",
+        "title": "Configure Options",
         "admin": false,
         "icon": "icon-doc-text",
         "onclick": "codiad.settings.show();"
@@ -62,7 +62,7 @@
     },
 
     {
-        "title": "Logout",
+        "title": "Close",
         "admin": false,
         "icon": "icon-logout",
         "onclick": "codiad.user.logout();"

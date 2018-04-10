@@ -132,19 +132,7 @@ if(isset($_SESSION['theme'])) {
                 <input type="password" name="password">
                 
                 <div class="language-selector">
-                    <label><span class="icon-picture login-icon"></span> <?php i18n("Theme"); ?></label>
-                    <select name="theme" id="theme">
-                        <option value="default"><?php i18n("Default"); ?></option>
-                        <?php
-                        include 'languages/code.php';
-                        foreach($themes as $theme): 
-                            if(file_exists(THEMES."/" . $theme . "/theme.json")) {
-                                $data = file_get_contents(THEMES."/" . $theme . "/theme.json");
-                                $data = json_decode($data,true);
-                            ?>
-                            <option value="<?php echo $theme; ?>" <?php if($theme == THEME) { echo "selected"; } ?>><?php if($data[0]['name'] != '') { echo $data[0]['name']; } else { echo $theme; } ?></option>
-                        <?php } endforeach; ?>
-                    </select>
+                    
                     <label><span class="icon-language login-icon"></span> <?php i18n("Language"); ?></label>
                     <select name="language" id="language">
                         <?php
@@ -277,9 +265,30 @@ if(isset($_SESSION['theme'])) {
                 <div id="tab-dropdown">
                     <a id="tab-dropdown-button" class="icon-down-open"></a>
                 </div>
+                
+                <div id="action-undo">
+                    <a id="action-undo-button" class="icon-cw" onclick="codiad.editor.getActive().redo();
+                this.onDocumentChange(); "title="<?php i18n("Redo") ?>"></a>
+                </div>
+
+                <div id="action-redo">
+                    <a id="action-redo-button" class="icon-ccw" onclick="codiad.editor.getActive().undo();
+                this.onDocumentChange();  "title="<?php i18n("Undo") ?>"></a>
+                </div>
+
+                 <div id="action-terminal">
+                    <a id="action-terminal-button" class="icon-code" onclick="codiad.terminal.open(); "title="<?php i18n("Terminal") ?>"></a>
+                </div>
+
+                <div id="action-color">
+                    <a id="action-color-button" class="icon-droplet" onclick="codiad.colorPicker.open(); "title="<?php i18n("Undo") ?>"></a>
+                </div>
+
+
                 <div id="tab-close">
                     <a id="tab-close-button" class="icon-cancel-circled" title="<?php i18n("Close All") ?>"></a>
                 </div>
+
                 <ul id="dropdown-list-active-files"></ul>
                 <div class="bar"></div>
             </div>
@@ -393,7 +402,7 @@ if(isset($_SESSION['theme'])) {
     </div>
 
     <div id="modal-overlay"></div>
-    <div id="modal"><div id="close-handle" class="icon-cancel" onclick="codiad.modal.unload();"></div><div id="drag-handle" class="icon-location"></div><div id="modal-content"></div></div>
+    <div id="modal"><div id="close-handle" class="icon-cancel" onclick="codiad.modal.unload();"></div><div id="drag-handle" class="icon-shuffle"></div><div id="modal-content"></div></div>
 
     <iframe id="download"></iframe>
 

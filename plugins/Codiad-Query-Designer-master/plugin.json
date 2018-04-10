@@ -6,7 +6,7 @@
     "rightbar": [
         {
             "action": "codiad.JSXDQD.open();",
-            "icon": "icon-database",
+            "icon": "icon-shareable",
             "title": "Query Designer"
         }
     ]

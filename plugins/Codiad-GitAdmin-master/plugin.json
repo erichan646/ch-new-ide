@@ -4,7 +4,7 @@
     "url" : "https://github.com/daeks/Codiad-GitAdmin.git",
     "rightbar" : [{
         "action" : "codiad.git.pull();",
-        "icon" : "icon-palette",
+        "icon" : "icon-github",
         "title" : "Git Admin"
         }]
   } ]

@@ -434,7 +434,7 @@ table [class^="icon-"],
 	background: #131313;
 	border-top: 1px solid #dbdcdd;
 	bottom: 0;
-	color: #1852D6;
+	color: #ffffff;
 	height: 28px;
 	padding: 6.5px 10px;
 	position: fixed;
@@ -511,6 +511,7 @@ table [class^="icon-"],
 
 #cursor-position {
 	bottom: 5.5px;
+	color: ghostwhite;
 	position: absolute;
 	right: 20px;
 	z-index: 99;
@@ -861,8 +862,8 @@ table [class^="icon-"],
 	color: #1852D6;
 	float: right;
 	font-size: 20px;
-	padding: 10px 10px 0 0;
-	margin: -4px 0 0 0;
+	padding: 7px 7px 0 0;
+	margin: -5px 0 0 0;
 }
 
 #modal #drag-handle:hover,
@@ -880,7 +881,7 @@ table [class^="icon-"],
 
 #modal-content {
 	padding: 20px;
-	width: 820px;
+	width: 100%;
 }
 
 #modal-loading {

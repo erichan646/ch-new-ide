@@ -6,7 +6,7 @@
     "rightbar": [
         {
             "action": "codiad.CodeTransfer.showSwitchDialog();",
-            "icon": "icon-switch",
+            "icon": "icon-publish",
             "title": "CodeTransfer"
         }
     ]

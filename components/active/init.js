@@ -924,7 +924,7 @@
              * bar handle and of the tab dropdown handle to the window width,
              * do we have enough room for the tab list? Its kind of complicated
              * to handle all the offsets, so afterwards we add a fixed offset
-             * just t be sure. */
+             * just to be sure. */
             var lsbarWidth = $(".sidebar-handle").width();
             if (codiad.sidebars.isLeftSidebarOpen) {
                 lsbarWidth = $("#sb-left").width();
@@ -962,10 +962,10 @@
                 // Be sure to hide the menu if it is opened.
                 $('#dropdown-list-active-files').hide();
             }
-            if ($('#tab-list-active-files li').length > 1) {
-                $('#tab-close').show();
+            if ($('#tab-list-active-files li').length >= 1) {
+                $('#tab-close').show();$('#action-undo').show();$('#action-redo').show();$('#action-terminal').show();$('#action-color').show();
             } else {
-                $('#tab-close').hide();
+                $('#tab-close').hide();$('#action-undo').hide();$('#action-redo').hide();$('#action-terminal').hide();$('#action-color').hide();
             }
         },
 
